@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1 class="nav-heading">Portfolio.</h1>
+        <ul class="list">
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#about">About</a></li>
+            <li class="item"><a href="#skills">Skills</a></li>
+            <li class="item"><a href="#projects">Projects</a></li>
+        </ul>
+        
+
+    </nav>
+    <header class="home" id="home">
+        <img src="asset/porfolio avatar.jpg" alt="girl">
+        <div class="heading">
+            <h2>Hello,</h2>
+            <h1 class="name">I'm Gauri Bondarkar</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="about" id="about">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit amet, temporibus expedita a obcaecati facere perspiciatis officiis quia saepe ducimus voluptate repellendus iusto ipsum facilis nulla. Similique nostrum reprehenderit voluptatem architecto. Porro, eaque quasi amet facere odit reiciendis repellat doloremque soluta labore corporis sint! Alias tempore fugit magnam expedita quae! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum incidunt perspiciatis ipsa exercitationem non libero! Reprehenderit eos repellat libero suscipit ex. Maxime iusto beatae laboriosam recusandae ab repudiandae, veritatis pariatur saepe sequi maiores magnam! Veritatis iusto maxime nam voluptatum nulla expedita quae, in amet, consectetur officiis est, nemo facilis earum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut hic illum libero possimus ipsum id est ex? In ipsa necessitatibus commodi aperiam voluptatum aliquid rerum sunt consectetur! Vitae quam dicta quos! Incidunt ipsam quam quae, alias dicta recusandae perferendis mollitia voluptatibus, nesciunt est, tempora explicabo eum. Illum suscipit, at mollitia doloribus enim rerum corrupti laboriosam expedita dicta quod? Assumenda in dolore explicabo tempore iure et architecto molestiae maxime, itaque praesentium optio, accusantium impedit odio nisi! Provident tenetur totam ex, velit porro minus! Delectus cupiditate obcaecati distinctio itaque asperiores voluptatem deleniti iste consequuntur. Dicta laborum eligendi sit fugit! Aspernatur, consequatur saepe!</p>
+        </section>
+
+
+        <section class="skills" id="skills">
+            <div class="grid-container">
+                <div class="grid-item"><h2>HTML</h2></div>
+                <div class="grid-item"><h2>CSS</h2></div>
+                <div class="grid-item"><h2>JavaScript</h2></div>
+                <div class="grid-item"><h2>ReactJs</h2></div>
+                <div class="grid-item"><h2>NodeJS</h2></div>
+                <div class="grid-item"><h2>Express</h2></div>
+                <div class="grid-item"><h2>MongoDB</h2></div>
+                <div class="grid-item"><h2>DSA</h2></div>
+                <div class="grid-item"><h2>SQL</h2></div>
+            </div>
+            <div class="skills-heading">
+                <h1>skills section</h1>
+            </div>
+        </section>
+
+
+        <section class="projects" id="projects">
+            
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <ul>
+            <li>
+                <div class="connect">
+                    <a href="mailto:gauribo17@gmail.com">
+                        <img src="asset/icons8-email-50.png" alt="email">
+                    </a>
+                </div>
+            </li>
+
+            <li>
+                <div class="connect">
+                    <a href="https://www.linkedin.com/in/gauri-bondarkar/">
+                        <img src="asset/icons8-linkedin-50.png" alt="linkedIn">
+                    </a>
+                </div>
+            </li>
+
+            <li>
+                <div class="connect">
+                    <a href="https://www.instagram.com/gauri_bondarkar/">
+                        <img src="asset/icons8-instagram-50.png" alt="instagram">
+                    </a>
+                </div>
+            </li>
+
+            <li>
+                <div class="connect">
+                    <a href="https://github.com/gauribondarkar">
+                        <img src="asset/icons8-github-50.png" alt="github">
+                    </a>
+                </div>
+            </li>
+        </ul>
+
+    </footer>
+</body>
+
+
+<script>
+    const projectsData = [
+        {project1: {
+            name: "Social Media Application",
+            description: "ndkjfndoijdilcndndjodndodsoicndocdcjunvodudoicdocndoicndocnuo",
+            }
+        },
+
+        {project2: {
+            name: "eCommerce application",
+            description: "ndkjfndoijdilcndndjodndodsoicndocdcjunvodudoicdocndoicndocnuo",
+            }
+        },
+
+        {project3: {
+            name: "sharing of data using user side encryption",
+            description: "ndkjfndoijdilcndndjodndodsoicndocdcjunvodudoicdocndoicndocnuo",
+            }
+        }
+    ];
+    const projectList = document.querySelector('.projects');
+
+    const projectFunction = () => {
+        projectsData.map((projectItem) => {
+            const projectElement = document.createElement('div');
+            projectElement.innerHTML = 
+            "<h3>${}</h3>"
+
+            projectList.appendChild(projectElement)
+        })
+    }
+    projectFunction();
+</script>
+</html>
